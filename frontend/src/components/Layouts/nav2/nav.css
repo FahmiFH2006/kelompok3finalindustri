@@ -1,0 +1,27 @@
+.mainNav{
+    width: 100%;
+    padding: 1%;
+    display: flex;
+}
+.mainNav .logoNav h1{
+    font-size: 100%;
+    margin-top: 2%;
+}
+.mainNav .srchNav{
+    margin-left: 35%;
+    margin-right: 5%;
+}
+.linkNav{
+    float: right;
+    right: 10%;
+    position: absolute;
+
+}
+.linkNav a{
+    text-decoration: none;
+    color: black;
+    margin-top: 2%;
+    margin-right: 15%;
+
+
+}

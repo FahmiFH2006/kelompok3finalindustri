@@ -1,0 +1,11 @@
+.CardList img{
+    width: 100%;
+}
+
+.CardList{
+    background-color: blue;
+}
+.tekskat{
+    width: 80%;
+    /* background-color: brown; */
+}

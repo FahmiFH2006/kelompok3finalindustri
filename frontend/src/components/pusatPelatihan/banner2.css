@@ -1,0 +1,22 @@
+.BannerMain{
+    /* background-color: blueviolet; */
+    display: flex;
+    border: solid black 1px;
+}
+.HeroBann{
+    width: 35%;
+}
+.HeroBann img{
+    width: 100%;
+}
+.textBann{
+    padding: 2%;
+    width: 65%;
+}
+.textBann h5{
+    font-size: 110%;
+    font-weight: bold;
+}
+.textBann p{
+    font-size: small;
+}

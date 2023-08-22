@@ -1,15 +1,17 @@
-import Nav from "../components/navbar/Navigation";
-import Banners from "../controllers/banner/banner";
-import Pcard from "../controllers/card/Pcard";
-import Footer from "../components/footer/footer";
+import Navbar from "../components/Layouts/navbar/Navigation"
+import Footer from "../components/Layouts/footer/footer"
+import NavBar2 from "../components/Layouts/nav2/nav2";
+import BannerUt from "../components/pusatPelatihan/banner";
+import CardList from "../components/pusatPelatihan/card2/card2";
 
 const PusatPel = () => {
     return(
         <div className="PusPel">
-            <Nav />
-            <Banners />
-            <Pcard />
+            <NavBar2 />
+            <BannerUt />
+            <CardList />
             <Footer />
+            
         </div>
     )
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Form, Input, Menu, Modal,Button  } from 'antd';
 import { BellOutlined } from '@ant-design/icons';
+import "./nav.css"
 
 function Navbar() {
   const placeHoldStyle={
@@ -31,11 +32,11 @@ function Navbar() {
     return (
         <div className='NavStyle' id='navStyle'>
             <Menu mode="horizontal">
-                <h1 className="font-bold" style={{ marginLeft: "50px",marginTop: "9px", fontFamily: "bold", fontSize: "20px" }} >NusaLearning</h1>
-                <Form className='nav w-80' style={{ marginLeft: "15rem", marginTop: "5px", marginBottom:"10px" }}>
-                    <Input className='border-black' style={{height: "40px"}} placeholder='Cari Pelatihan ...' />
+                <h1 className="font-bold" style={{ marginLeft: "3%",marginTop: "1%", fontFamily: "bold", fontSize: "140%" }} >NusaLearning</h1>
+                <Form  style={{ marginLeft: "5%",width:"40%", marginTop: "1%", marginBottom:"2%" }}>
+                    <Input className='border-black' style={{height: "100%",width:"120%"}} placeholder='Cari Pelatihan ...' />
                 </Form>
-                <div className="ms" style={{ marginLeft: "30rem" }}>
+                <div style={{ marginLeft: "12%" }}>
                     <Menu.Item key="home" >
                         Beranda
                     </Menu.Item>
