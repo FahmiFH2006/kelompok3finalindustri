@@ -1,0 +1,21 @@
+/* Footer */
+.footer {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    padding: 3rem;
+}
+
+.cls {
+    margin-left: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.custom-link {
+    color: inherit; /* Menggunakan warna teks yang diwarisi dari parent */
+    text-decoration: none; /* Menghilangkan garis bawah */
+  }
+
+
+
+/* End Footer */
