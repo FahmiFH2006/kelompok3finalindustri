@@ -1,4 +1,3 @@
-import Navbar from "../components/Layouts/navbar/Navigation"
 import Footer from "../components/Layouts/footer/footer"
 import NavBar2 from "../components/Layouts/nav2/nav2";
 import BannerUt from "../components/pusatPelatihan/banner";
