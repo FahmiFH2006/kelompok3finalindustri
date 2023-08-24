@@ -1,14 +1,11 @@
 import React, { useState } from 'react';
-import { Form, Input, Menu, Modal,Button  } from 'antd';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';import { Form, Menu, Modal,Button  } from 'antd';
 import { BellOutlined } from '@ant-design/icons';
 import "./nav.css"
+import { Input } from 'antd';
+const { Search } = Input;
 
-function Navbar() {
-  const placeHoldStyle={
-    '::placeholder':{
-      color : 'grey'
-    }
-  }
+const NavBar2 = () =>{
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isNestedModalOpen, setIsNestedModalOpen] = useState(false);
   
@@ -29,28 +26,27 @@ function Navbar() {
       setIsModalOpen(false);
       setIsNestedModalOpen(false);
     };
-    return (
-        <div className='NavStyle' id='navStyle'>
-            <Menu mode="horizontal">
-                <h1 className="font-bold" style={{ marginLeft: "3%",marginTop: "1%", fontFamily: "bold", fontSize: "140%" }} >NusaLearning</h1>
-                <Form  style={{ marginLeft: "5%",width:"40%", marginTop: "1%", marginBottom:"2%" }}>
-                    <Input className='border-black' style={{height: "100%",width:"120%"}} placeholder='Cari Pelatihan ...' />
-                </Form>
-                <div style={{ marginLeft: "12%" }}>
-                    <Menu.Item key="home" >
-                        Beranda
-                    </Menu.Item>
-                    <Menu.Item key="search" >
-                        Pelatihan
-                    </Menu.Item>
-                    <Menu.Item icon={< BellOutlined />}>
-                    </Menu.Item>
-                    <Menu.Item key="search" onClick={showModal} >
-                        Login
-                    </Menu.Item>
-                </div>
-            </Menu>
-            <Modal
+    return(
+        <>
+        <div className="mainNav">
+            <div className="logoNav">
+                <h1>NusaLearning</h1>
+            </div>
+            <div className="formNav">
+            <Search className='srchNav'
+      placeholder="input search text"
+      onSearch={value => console.log(value)}
+      style={{ width: 450 }}
+    />
+            </div>
+        <div className="linkNav">
+            <a href="#">beranda</a>
+            <a href="#">pelatihan</a>
+            <a href="#">notif</a>
+            <a href="#" onClick={showModal} >login</a>
+
+
+<Modal
              open={isModalOpen} 
              onOk={handleOk} 
              onCancel={handleCancel}
@@ -83,7 +79,9 @@ function Navbar() {
             </div>
            
       </Modal>
-      <Modal
+    
+
+<Modal
         open={isNestedModalOpen}
         onOk={handleOk}
         onCancel={handleCancel}
@@ -125,8 +123,15 @@ function Navbar() {
         </form>
 
       </Modal>
+    
+
+
+            
+      
         </div>
+        </div>
+        </>
     )
 }
 
-export default Navbar
+export default NavBar2;

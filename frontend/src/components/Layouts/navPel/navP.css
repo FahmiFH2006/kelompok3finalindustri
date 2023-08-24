@@ -1,0 +1,30 @@
+.MNP{
+    width: 100%;
+    padding: 1%;
+    display: flex;
+}
+.MNP .logoMNP h1{
+    font-size: 100%;
+    margin-top : 2%;
+}
+.linkMPN{
+    float: right;
+    right: 10%;
+    position: absolute;
+   
+    
+
+}
+.linkMPN a{
+    color: black;
+    margin-top: 1%;
+    margin-right: 15%;
+}
+.Navpl {
+    margin-left: 140%;
+    margin-top: -47%;
+}
+.berandaP{
+    margin-left: 2%;
+    
+}
