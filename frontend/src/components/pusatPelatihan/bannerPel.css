@@ -1,0 +1,19 @@
+
+.HeroBann2{
+    width: 40%;
+}
+.HeroBann2 img{
+    width: 100%;
+   margin-left: 450px;
+}
+.textBann2{
+    padding: 2%;
+    width: 65%;
+}
+.textBann2 h5{
+    font-size: 110%;
+    font-weight: bold;
+}
+.textBann2 p{
+    font-size: small;
+}

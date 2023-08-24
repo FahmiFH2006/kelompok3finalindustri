@@ -1,7 +1,8 @@
 import Footer from "../components/Layouts/footer/footer"
-import NavBar2 from "../components/Layouts/nav2/nav2";
 import BannerUt from "../components/pusatPelatihan/banner";
 import CardList from "../components/pusatPelatihan/card2/card2";
+import P2card from "../components/pusatPelatihan/card/p2Card";
+import NavBar2 from "../components/Layouts/NavDefault/navDef";
 
 const PusatPel = () => {
     return(
@@ -9,6 +10,7 @@ const PusatPel = () => {
             <NavBar2 />
             <BannerUt />
             <CardList />
+            <P2card />
             <Footer />
             
         </div>

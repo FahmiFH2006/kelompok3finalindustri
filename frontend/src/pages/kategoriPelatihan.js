@@ -1,6 +1,6 @@
 import CardKTG from "../components/card1/card-ktg"
 import Footer from "../components/Layouts/footer/footer"
-import NavBar2 from "../components/Layouts/nav2/nav2"
+import NavBar2 from "../components/Layouts/NavDefault/navDef"
 
 const KategoriPel = () => {
     return (

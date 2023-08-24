@@ -5,6 +5,7 @@
 }
 .HeroBann{
     width: 35%;
+    float: left;
 }
 .HeroBann img{
     width: 100%;

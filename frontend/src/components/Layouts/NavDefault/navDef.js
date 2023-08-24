@@ -45,7 +45,8 @@ const NavBar2 = () =>{
             <a href="#">notif</a>
             <a href="#" onClick={showModal} >login</a>
 
-            <Modal
+
+<Modal
              open={isModalOpen} 
              onOk={handleOk} 
              onCancel={handleCancel}
@@ -78,7 +79,9 @@ const NavBar2 = () =>{
             </div>
            
       </Modal>
-      <Modal
+    
+
+<Modal
         open={isNestedModalOpen}
         onOk={handleOk}
         onCancel={handleCancel}
@@ -120,6 +123,11 @@ const NavBar2 = () =>{
         </form>
 
       </Modal>
+    
+
+
+            
+      
         </div>
         </div>
         </>
