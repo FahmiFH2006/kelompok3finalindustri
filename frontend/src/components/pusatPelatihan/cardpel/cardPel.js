@@ -1,78 +1,46 @@
 
 import React from 'react';
-import { LaptopOutlined, NotificationOutlined, UserOutlined } from '@ant-design/icons';
-import { Breadcrumb, Layout, Menu, theme } from 'antd';
-const {  Content, Footer, Sider } = Layout;
-const items1 = ['1', '2', '3'].map((key) => ({
-  key,
-  label: `nav ${key}`,
-}));
-const items2 = [UserOutlined, LaptopOutlined, NotificationOutlined].map((icon, index) => {
-  const key = String(index + 1);
-  return {
-    key: `sub${key}`,
-    label: `Modul ${key}`,
-    children: new Array(4).fill(null).map((_, j) => {
-      const subKey = index * 4 + j + 1;
-      return {
-        key: subKey,
-        label: `Sub Modul${subKey}`,
-      };
-    }),
-  };
-});
-const App = () => {
-  const {
-    token: { colorBgContainer },
-  } = theme.useToken();
-  return (
-    <Layout>
+import { Button,  Progress } from 'antd';
 
-      <Content
-        style={{
-          padding: '0 50px',
-        }}
-      >
-        <Layout
-          style={{
-            padding: '24px 0',
-            background: colorBgContainer,
-          }}
-        >
-          <Sider
-            style={{
-              background: colorBgContainer,
-            }}
-            width={200}
-          >
-            <Menu
-              mode="inline"
-              defaultSelectedKeys={['1']}
-              defaultOpenKeys={['sub1']}
-              style={{
-                height: '100%',
-              }}
-              items={items2}
-            />
-          </Sider>
-          <Content
-            style={{
-              padding: '0 24px',
-              minHeight: 280,
-            }}
-          >
-            Content
-          </Content>
-        </Layout>
-      </Content>
-      <Footer
-        style={{
-          textAlign: 'center',
-        }}
-      >
-        Ant Design ©2023 Created by Ant UED
-      </Footer>
-    </Layout>
-  );
-};
-export default App;
+const Pelcard = () => (
+  <div style={{ background: "gray", width: "20%", height: "90%",marginLeft:"10%" }}>
+    <h4 style={{marginLeft:"5%"}}>Proggres</h4> 
+    <p style={{marginLeft:"5%"}}>0%</p>
+    <Progress percent={0} showInfo={false} style={{width: "90%" ,marginLeft:"5%"}} />
+    <br /><br /><br />
+    <div className="border-bottom border-dark border-3"></div>
+    <h4 style={{marginLeft:"5%"}}>Modul1</h4>
+    <div className="border-bottom border-dark border-3"></div>
+    <br />
+    <Button style={{width:"75%",marginLeft:"11%"}}>Sub Modul 1</Button>
+    <br /><br />
+    <Button style={{width:"75%",marginLeft:"11%"}}>Sub Modul 2</Button>
+    <br /><br />
+    <Button style={{width:"75%",marginLeft:"11%"}}>Sub Modul 3</Button>
+    <br /><br />
+    <Button style={{width:"75%",marginLeft:"11%"}}>Sub Modul 4</Button>
+    <br /><br />
+    <div className="border-bottom border-dark border-3"></div>
+    <h4 style={{marginLeft:"5%"}}>Modul2</h4>
+    <div className="border-bottom border-dark border-3"></div>
+    <br />
+    <Button style={{width:"75%",marginLeft:"11%"}}>Sub Modul 1</Button>
+    <br /><br />
+    <Button style={{width:"75%",marginLeft:"11%"}}>Sub Modul 2</Button>
+    <br /><br />
+    <Button style={{width:"75%",marginLeft:"11%"}}>Sub Modul 3</Button>
+    <br /><br />
+    <Button style={{width:"75%",marginLeft:"11%"}}>Sub Modul 4</Button>
+    <br /><br />
+    <div className="border-bottom border-dark border-3"></div>
+    <h4 style={{marginLeft:"5%"}}>Final Quiz</h4>
+    <div className="border-bottom border-dark border-3"></div>
+    <br /><br /><br /><br />
+  </div>  
+
+
+
+
+);
+
+export default Pelcard;

@@ -1,4 +1,4 @@
-const DataProduct = [
+const DataProduct1 = [
     {
         id: 1,
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyWrgwdUlFf8_PDXP5LYFGVn25wFIFF-WYug&usqp=CAU",
@@ -38,4 +38,4 @@ const DataProduct = [
     },
 ]
 
-export {DataProduct}
+export {DataProduct1}

@@ -46,16 +46,16 @@ const Footer = () => {
   
 
           <p>
-            <a style={{ marginRight: "15px" }}>
+            <a style={{ marginRight: "15px" }} href="https://www.youtube.com/@nusalms677">
               <i style={{ fontSize: "30px" }} className="bi bi-youtube"></i>
             </a>
-            <a style={{ marginRight: "15px" }}>
+            <a style={{ marginRight: "15px" }} href="https://m.facebook.com/p/Nusalms-100075903382526/">
               <i style={{ fontSize: "30px" }} className="bi bi-facebook"></i>
             </a>
-            <a style={{ marginRight: "15px" }}>
+            <a style={{ marginRight: "15px" }} href="https://instagram.com/fahmifahrizal1904?igshid=MmU2YjMzNjRlOQ==">
               <i style={{ fontSize: "30px" }} className="bi bi-instagram"></i>
             </a>
-            <a>
+            <a href="https://www.youtube.com/watch?v=xm3YgoEiEDc">
               <i style={{ fontSize: "30px" }} className="bi bi-twitter"></i>
             </a>
           </p>
@@ -68,6 +68,7 @@ const Footer = () => {
           <Button
             variant="secondary"
             style={{ display: "block", marginRight: "15px" }}
+             href="https://play.google.com/store/apps/details?id=com.nusalms&hl=en-ID"
           >
             PlayStore
           </Button>
@@ -76,6 +77,7 @@ const Footer = () => {
             style={{
               display: "block",
             }}
+            href="https://apps.apple.com/id/app/petualangan-ramadhan/id1462655135?l=id"
           >
             AppStore
           </Button>

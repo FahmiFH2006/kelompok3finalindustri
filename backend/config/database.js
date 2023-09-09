@@ -5,3 +5,12 @@ module.exports={
     DB : process.env.DB_DATABASE || "kelompok3",
     dialect : process.env.DB_USER || "mysql"
 };
+
+// const sequelize = require ("sequelize")
+
+// const db =  new sequelize('kelompok3','root','',{
+//     host:"localhost",
+//     dialect:"mysql"
+// })
+
+// export default db;
