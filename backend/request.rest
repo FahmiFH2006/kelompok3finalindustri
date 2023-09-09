@@ -1,0 +1,12 @@
+GET http://localhost:5000/Users
+Authorization: Bearer
+accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJGYWhtaSBGYWhyaXphbCIsImVtYWlsIjoiZmFobWlmaDE2QGdtYWlsLmNvbSIsImlhdCI6MTY5MzMyMjkzOCwiZXhwIjoxNjkzMzIyOTU4fQ.w6mXrpQsfBenHtmWaZVgRq4aaqn5hYSPIOo-64xgPDc
+
+###
+POST http://localhost:5000/Login
+Content-Type: application/json
+
+{
+    "email":"fahmifh16@gmail.com",
+    "password":"FahmiFH2006"
+}

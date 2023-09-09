@@ -1,6 +1,7 @@
-import CardKTG from "../components/card1/card-ktg"
+import Cardpht from "../components/card1/card-pht"
 import Footer from "../components/Layouts/footer/footer"
 import NavBar2 from "../components/Layouts/NavDefault/navDef"
+
 
 const KategoriPel = () => {
     return (
@@ -10,7 +11,7 @@ const KategoriPel = () => {
                 <h2>Kategori Pelatihan</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus quis assumenda voluptatibus animi! Aliquid natus cumque dolor accusantium, obcaecati sint.</p>
             </div>
-            <CardKTG />
+            <Cardpht />
             <Footer />
         </div>
     )

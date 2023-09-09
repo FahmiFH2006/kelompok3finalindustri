@@ -16,5 +16,6 @@ db.Sequelize = Sequelize;
 db.schema = schema;
 
 db.pelatihan = require("./pelatihanModel.js") (schema,Sequelize)
+db.users = require("./userModel.js") (schema,Sequelize)
 
 module.exports = db;
